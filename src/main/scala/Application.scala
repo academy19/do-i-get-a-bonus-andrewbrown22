@@ -1,10 +1,10 @@
 object Application {
 
-  def calculateBonus(i: Int, bool: Boolean) : Double = {
+  def calculateBonus(i: Int, bool: Boolean) : String = {
    if(bool) {
-     i * 1.2
+     s"Your salary is £${(i * 1.2).toInt}"
    }
-   else i
+   else s"Your salary is £$i"
   }
 
   def main(args : Array[String]) : Unit = {
