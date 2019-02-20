@@ -1,7 +1,11 @@
 object Application {
 
-  // write your function here
-
+  def calculateBonus(i: Int, bool: Boolean) : Double = {
+   if(bool) {
+     i * 1.2
+   }
+   else i
+  }
 
   def main(args : Array[String]) : Unit = {
     println(calculateBonus(100, true))  // should print £120
